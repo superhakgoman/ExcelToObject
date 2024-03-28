@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using Unity.IO.Compression;
+using System.IO.Compression;
 
 namespace ExcelToObject
 {
@@ -113,7 +113,7 @@ namespace ExcelToObject
 			bool compressed = method != 0;      //0=STORE, 8=DEFLATE (https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT)
 
 			int dataPos = headerPos + 30 + name2Len + extra2Len;
-			
+
 			if( (flag & 0x8) == 0x8 )
 			{
 				// the CRC-32 and file sizes are not known when the header is written.
