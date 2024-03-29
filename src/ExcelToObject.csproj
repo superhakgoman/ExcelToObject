@@ -29,20 +29,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Remove="ObjectMapper.cs" />
-    <Compile Remove="Test\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
-    <Compile Remove="Test\Program.cs" />
-    <Compile Remove="Test\Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <!-- <PropertyGroup>
-    <PostBuildEvent>COPY $(TargetFileName) ..\..\..\binaries\
-IF EXIST $(SolutionDir)..\Assets\Plugins\ COPY $(TargetFileName) $(SolutionDir)..\Assets\Plugins\</PostBuildEvent>
-  </PropertyGroup> -->
 </Project>
