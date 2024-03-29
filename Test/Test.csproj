@@ -10,9 +10,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExcelToObject.csproj" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\src\ExcelToObject.csproj" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 </Project>
